@@ -1,0 +1,108 @@
+
+**** 11/04/22 22:42:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stage1"  [ E:\STUDY\SOLID LABS\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\stage1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "stage1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../reverse bias p-n junction-pspicefiles/reverse bias p-n junction.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 1ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source REVERSE BIAS P-N JUNCTION
+D_D1         N00135 N00142 Dbreak 
+R_R1         0 N00135  10k TC=0,0 
+V_V1         N00369 0 5V
+V_V2         N00142 N00369  
++SIN 0 5v 10meg 0 0 0
+
+**** RESUMING stage1.cir ****
+.END
+
+**** 11/04/22 22:42:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stage1"  [ E:\STUDY\SOLID LABS\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\stage1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO   15.000000E-09 
+
+
+**** 11/04/22 22:42:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stage1"  [ E:\STUDY\SOLID LABS\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\stage1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00135) 50.10E-09 (N00142)    5.0000 (N00369)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.010E-12
+    V_V2        -5.010E-12
+
+    TOTAL POWER DISSIPATION   2.51E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/04/22 22:42:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stage1"  [ E:\STUDY\SOLID LABS\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\stage1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
