@@ -1,19 +1,19 @@
 * source REVERSE BIAS P-N JUNCTION
 D_D1         N00135 N00142 Dbreak 
 R_R1         0 N00135  10k TC=0,0 
-V_V1         N00369 0 5V
-V_V2         N00142 N00369 DC 0Vdc AC 5V 
+V_V1         N00369 0 9.5V
+V_V2         N00142 N00369 DC 0Vdc AC 0.2V 
 R_R2         0 N00778  10k TC=0,0 
 D_D2         N00778 N00786 Dbreak 
-V_V3         N00814 0 5V
+V_V3         N00814 0 9.5V
 V_V4         N00786 N00814  AC 0
-+SIN 0 5v 10MEG 0 0 0
-V_V6         N01326 N01350 DC 0Vdc AC 5V 
++SIN 0 0.2V 10MEG 0 0 0
+V_V6         N01326 N01350 DC 0Vdc AC 0.5V 
 R_R3         N01618 N01326  10k TC=0,0 
 V_V7         N01466 0 5V
 R_R4         N01639 N01450  10k TC=0,0 
 D_D3         0 N01618 Dbreak 
-V_V5         N01350 0 5V
+V_V5         N01350 0 9.5V
 D_D4         0 N01639 Dbreak 
 V_V8         N01450 N01466  AC 0
 +SIN 0 5v 10MEG 0 0 0

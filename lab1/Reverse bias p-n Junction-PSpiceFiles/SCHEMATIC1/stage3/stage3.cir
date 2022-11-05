@@ -1,6 +1,6 @@
-** Profile: "SCHEMATIC1-stage2"  [ E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction-pspicefiles\schematic1\stage2.sim ] 
+** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\stage3.sim ] 
 
-** Creating circuit file "stage2.cir" 
+** Creating circuit file "stage3.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -11,7 +11,8 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.AC DEC 100 1 10G
+.TRAN  0 1000ns 0 
+.STEP V_V5 LIST -9.5 9.5 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
