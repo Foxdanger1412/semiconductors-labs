@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-sim3"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\sim3.sim ] 
+
+** Creating circuit file "sim3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-ahmed-pspicefiles/lab4-ahmed.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 5V 5m 
+.STEP LIN I_I1 0 10m 2.5m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

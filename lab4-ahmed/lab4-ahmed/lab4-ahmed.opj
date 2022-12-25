@@ -1,51 +1,51 @@
-(ExpressProject "Reverse bias p-n Junction"
+(ExpressProject "lab4-ahmed"
   (ProjectVersion "19981106")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
     (NoModify)
-    (File ".\reverse bias p-n junction.dsn"
+    (File ".\lab4-ahmed.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
     (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Outputs"
-    (File ".\reverse bias p-n junction-pspicefiles\schematic1\schematic1.net"
+    (File ".\lab4-ahmed-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\reverse bias p-n junction-pspicefiles\schematic1\stage1.sim"
-        (DisplayName "SCHEMATIC1-stage1")
+         ".\lab4-ahmed-pspicefiles\schematic1\sim1.sim"
+        (DisplayName "SCHEMATIC1-sim1")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\reverse bias p-n junction-pspicefiles\schematic1\stage2.sim"
-        (DisplayName "SCHEMATIC1-stage2")
+         ".\lab4-ahmed-pspicefiles\schematic1\sim2.sim"
+        (DisplayName "SCHEMATIC1-sim2")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\reverse bias p-n junction-pspicefiles\schematic1\stage3.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\reverse bias p-n junction-pspicefiles\schematic1\stage3.sim"
-        (DisplayName "SCHEMATIC1-stage3")
+         ".\lab4-ahmed-pspicefiles\schematic1\sim3.sim"
+        (DisplayName "SCHEMATIC1-sim3")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab4-ahmed-pspicefiles\schematic1\smim4.sim"
+        (DisplayName "SCHEMATIC1-smim4")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lab4-ahmed-pspicefiles\schematic1\sim5.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab4-ahmed-pspicefiles\schematic1\sim5.sim"
+        (DisplayName "SCHEMATIC1-sim5")
         (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
-      (File
-         ".\reverse bias p-n junction-pspicefiles\reverse bias p-n junction.lib"
+      (File ".\lab4-ahmed-pspicefiles\lab4-ahmed.lib"
         (Type "PSpiceLibrary")
-        (DisplayName
-           ".\reverse bias p-n junction-pspicefiles\reverse bias p-n junction.lib")))
+        (DisplayName ".\lab4-ahmed-pspicefiles\lab4-ahmed.lib")))
     (Folder "Stimulus Files"
       (Sort User))
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (VSIN
-      (FullPartName "VSIN.Normal")
-      (LibraryName
-         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
       (LibraryName
@@ -54,39 +54,44 @@
     (0
       (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (VPWL_RE_N_TIMES
-      (FullPartName "VPWL_RE_N_TIMES.Normal")
-      (LibraryName
-         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
       (LibraryName
          "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (Dbreak
-      (FullPartName "Dbreak.Normal")
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
       (LibraryName
          "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory
-     "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction.dsn")
-      (Path "Design Resources"
-         "E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction.dsn"
+      (Path "Design Resources" "E:\study\lab4-ahmed\lab4-ahmed\lab4-ahmed.dsn")
+      (Path "Design Resources" "E:\study\lab4-ahmed\lab4-ahmed\lab4-ahmed.dsn"
          "SCHEMATIC1")
       (Select "Design Resources"
-         "E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction.dsn"
-         "SCHEMATIC1" "PAGE1"))
+         "E:\study\lab4-ahmed\lab4-ahmed\lab4-ahmed.dsn" "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -97,11 +102,10 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1238 52 304")
-        (Scroll "1007 0")
-        (Zoom "256")
+        (Scroll "518 92")
+        (Zoom "184")
         (Occurrence "/"))
-      (Path
-         "E:\STUDY\SOLID LABS\SEMICONDUCTORS-LABS\LAB1\REVERSE BIAS P-N JUNCTION.DSN")
+      (Path "E:\STUDY\LAB4-AHMED\LAB4-AHMED\LAB4-AHMED.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (MPSSessionName "Loosha"))

@@ -1,0 +1,104 @@
+
+**** 12/24/22 09:25:51 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-ahmed-pspicefiles/lab4-ahmed.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN I_I1 0 10m 2.5m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4-AHMED
+Q_Q1         N00103 N00096 0 Qbreakn 
+V_V1         N00103 0 5V
+I_I1         0 N00096 DC 0Adc  
+
+**** RESUMING sim2.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file D:\lab4-ahmed\lab4-ahmed-pspicefiles\lab4-ahmed.lib has changed since index file lab4-ahmed.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Sat Dec 24 09:22:05 2022 to Sat Dec 24 09:25:48 2022.
+
+INFO(ORPSIM-15422): Making new index file lab4-ahmed.ind for library file lab4-ahmed.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 12/24/22 09:25:51 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Qbreakn         
+               NPN             
+       LEVEL    1            
+          IS   10.000000E-12 
+          BF  200            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 12/24/22 09:25:51 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

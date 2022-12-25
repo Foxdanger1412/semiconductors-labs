@@ -1,0 +1,142 @@
+
+**** 12/24/22 10:02:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-smim4"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\smim4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "smim4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab4-ahmed-pspicefiles/lab4-ahmed.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4-AHMED
+Q_Q2         N00585 N00559 0 Qbreakn 
+R_R1         N00559 N00566  150K TC=0,0 
+R_R2         0 N00559  10K TC=0,0 
+R_R3         N00585 N00566  4.7K TC=0,0 
+R_R4         0 N00610  10K TC=0,0 
+C_C1         N00555 N00559  1u  TC=0,0 
+C_C2         N00585 N00610  1u  TC=0,0 
+V_V2         N00555 0  
++SIN 0 0.01V 1K 0 0 0
+V_V1         N00566 0 10V
+
+**** RESUMING smim4.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file D:\lab4-ahmed\lab4-ahmed-pspicefiles\lab4-ahmed.lib has changed since index file lab4-ahmed.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Sat Dec 24 10:01:06 2022 to Sat Dec 24 10:02:15 2022.
+
+INFO(ORPSIM-15422): Making new index file lab4-ahmed.ind for library file lab4-ahmed.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 12/24/22 10:02:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-smim4"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\smim4.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Qbreakn         
+               NPN             
+       LEVEL    1            
+          IS    1.000000E-12 
+          BF  200            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/24/22 10:02:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-smim4"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\smim4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00555)    0.0000 (N00559)     .5486 (N00566)   10.0000 (N00585)    2.3415     
+
+(N00610)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_V1        -1.692E-03
+
+    TOTAL POWER DISSIPATION   1.69E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/24/22 10:02:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-smim4"  [ D:\lab4-ahmed\lab4-ahmed-PSpiceFiles\SCHEMATIC1\smim4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

@@ -1,18 +1,18 @@
 @OrCAD Simulation Server Version: 1.0
 
-@Settings: 0 1
+@Settings: 2 1
 @General:
-ProfileName= "stage3" 
-ProfileFile= "stage3.sim" 
+ProfileName= "sim5" 
+ProfileFile= "sim5.sim" 
 Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "stage3.cir" 
-DataFile= "stage3.dat" 
-OutFile= "stage3.out" 
+NetlistFile= "sim5.cir" 
+DataFile= "sim5.dat" 
+OutFile= "sim5.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
-@Analysis: 0 1
+@Analysis: 0 0
 +0 0 0 0 
 +0 "1000ns" 
 +1 "" 
@@ -22,25 +22,25 @@ Notes=
 +5 "" 
 +6 "" 
 @End Analysis
-@Analysis: 1 0
-+2 0 0
+@Analysis: 1 1
++0 0 0
++0 "1000" 
++1 "10Hz" 
++2 "10Ghz" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 0
++0 0
 +0 "" 
 +1 "" 
 +2 "" 
 +3 "" 
 +4 "" 
 +5 "" 
-@End Analysis
-@Analysis: 2 0
-+3 0
-+0 "V5" 
-+1 "" 
-+2 "" 
-+3 "" 
-+4 "" 
-+5 "" 
 +6 "" 
-+7 "-9.5 9.5" 
++7 "" 
 @End Analysis
 @Analysis: 3 0
 +0 0 0
@@ -49,7 +49,7 @@ Notes=
 +2 "" 
 @End Analysis
 @Analysis: 4 0
-+0 0 1 0 0 0 0 0 0 0 1
++0 0 1 0 0 0 2 0 0 0 1
 +0 "" 
 +1 "" 
 +2 "" 
@@ -61,16 +61,16 @@ Notes=
 LoadFile 0 "" 
 SaveFile 0 "" 
 @End Analysis
-@Analysis: 5 0
-+3 0
-+0 "V5" 
-+1 "" 
-+2 "" 
-+3 "" 
+@Analysis: 5 1
++3 3
++0 "" 
++1 "VA" 
++2 "QbreakN" 
++3 "NPN" 
 +4 "" 
 +5 "" 
 +6 "" 
-+7 "-9.5 9.5" 
++7 "20,1000" 
 @End Analysis
 @Analysis: 6 0
 +1 

@@ -1,7 +1,7 @@
 
-**** 11/05/22 04:59:41 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 11/14/22 15:31:38 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\sta
+ ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction-pspicefiles\schematic1\sta
 
 
  ****     CIRCUIT DESCRIPTION
@@ -19,12 +19,11 @@
 * Profile Libraries :
 * Local Libraries :
 .LIB "../../../reverse bias p-n junction-pspicefiles/reverse bias p-n junction.lib" 
-* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\engmo\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
 .lib "nomd.lib" 
 
 *Analysis directives: 
 .TRAN  0 1000ns 0 
-.STEP V_V5 LIST -9.5 9.5 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -55,9 +54,9 @@ V_V8         N01450 N01466  AC 0
 **** RESUMING stage3.cir ****
 .END
 
-**** 11/05/22 04:59:41 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 11/14/22 15:31:38 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\sta
+ ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction-pspicefiles\schematic1\sta
 
 
  ****     Diode MODEL PARAMETERS
@@ -76,55 +75,12 @@ V_V8         N01450 N01466  AC 0
            M     .42         
 
 
-**** 11/05/22 04:59:41 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 11/14/22 15:31:38 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\sta
-
-
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
- ****     CURRENT STEP                     V_V5 =   -9.5   
-
-
-******************************************************************************
-
-
-
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
-
-
-(N00135) 95.10E-09 (N00142)    9.5000 (N00369)    9.5000 (N00778) 95.10E-09     
-
-(N00786)    9.5000 (N00814)    9.5000 (N01326)   -9.5000 (N01350)   -9.5000     
-
-(N01450)    5.0000 (N01466)    5.0000 (N01618)    -.6520 (N01639)    5.0000 
-
-
-
-
-    VOLTAGE SOURCE CURRENTS
-    NAME         CURRENT
-
-    V_V1        -9.510E-12
-    V_V2        -9.510E-12
-    V_V3        -9.510E-12
-    V_V4        -9.510E-12
-    V_V6         8.848E-04
-    V_V7        -5.010E-12
-    V_V5         8.848E-04
-    V_V8        -5.010E-12
-
-    TOTAL POWER DISSIPATION   8.41E-03  WATTS
-
-
-**** 11/05/22 04:59:41 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
-
- ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\sta
+ ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction-pspicefiles\schematic1\sta
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
- ****     CURRENT STEP                     V_V5 =    9.5   
 
 
 ******************************************************************************
@@ -161,14 +117,12 @@ V_V8         N01450 N01466  AC 0
 
           JOB CONCLUDED
 
-**** 11/05/22 04:59:41 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+**** 11/14/22 15:31:38 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\Reverse bias p-n Junction-PSpiceFiles\SCHEMATIC1\sta
+ ** Profile: "SCHEMATIC1-stage3"  [ E:\study\solid labs\semiconductors-labs\lab1\reverse bias p-n junction-pspicefiles\schematic1\sta
 
 
  ****     JOB STATISTICS SUMMARY
-
- ****     CURRENT STEP                     V_V5 =    9.5   
 
 
 ******************************************************************************

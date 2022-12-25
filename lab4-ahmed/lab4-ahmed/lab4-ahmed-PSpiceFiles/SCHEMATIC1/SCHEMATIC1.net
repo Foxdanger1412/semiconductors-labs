@@ -1,0 +1,10 @@
+* source LAB4-AHMED
+Q_Q2         N00585 N00559 0 Qbreakn 
+R_R1         N00559 N00566  150K TC=0,0 
+R_R2         0 N00559  10K TC=0,0 
+R_R3         N00585 N00566  4.7K TC=0,0 
+R_R4         0 N00610  10K TC=0,0 
+C_C1         N00555 N00559  1u  TC=0,0 
+C_C2         N00585 N00610  1u  TC=0,0 
+V_V1         N00566 0 10V
+V_V2         N00555 0 DC 0Vdc AC 0.01V 
